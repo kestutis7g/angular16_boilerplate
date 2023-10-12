@@ -1,0 +1,10 @@
+router-outlet {
+  min-height: 100vh;
+}
+
+#main-content {
+	display: block;
+	background-color: var(--primary-background);
+	height: 100vh;
+}
+

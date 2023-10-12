@@ -1,0 +1,71 @@
+{
+  "label": {
+    "signIn": "Prisijungti",
+    "signOut": "Atsijungti",
+    "username": "Prisijungimo vardas",
+    "password": "Slaptažodis",
+    "id": "ID",
+    "all": "Visi",
+    "comment": "Komentaras",
+    "table": "Lentelė",
+    "status": "Būsena",
+    "amount": "Kiekis",
+    "date": "Data",
+    "createdAt": "Sukurta",
+    "modifiedAt": "Pakeista",
+    "dateFrom": "Data nuo",
+    "dateTo": "Data iki",
+    "failed": "Nepavyko",
+    "skipped": "Praleistas",
+    "upload": "Įkelti",
+    "uploading": "Įkeliama",
+    "processing": "Apdorojama"
+  },
+
+  "setting": {
+    "appearance": "Išvaizda",
+    "theme": "Tema",
+    "themeStatus": {
+      "dark": "Tamsi",
+      "light": "Šviesi"
+    },
+    "language": "Kalba",
+    "languageStatus": {
+      "lt": "Lietuvių",
+      "en": "Anglų"
+    }
+  },
+
+  "action": {
+    "send": "Siųsti",
+    "delete": "Ištrinti",
+    "cancel": "Atšaukti",
+    "save": "Išsaugoti",
+    "confirm": "Patvirtinti",
+    "refresh": "Atnaujinti",
+    "upload": "Įkelti",
+    "sendAll": "Siųsti viską",
+    "clear": "Išvalyti"
+  },
+
+  "menu": {
+    "home": "Pradinis",
+    "list": "Sąrašas",
+    "settings": "Nustatymai"
+  },
+
+  "alert": {
+    "success": "Sėkmė",
+    "info": "Informacija",
+    "error": "Klaida",
+    "notFound": "Nerastas",
+    "message": {
+      "inputRequired": "Reikalinga įvestis",
+      "delete": "Ar tikrai norite ištrinti?"
+    }
+  },
+
+  "error": {
+    "ERROR_INVALID_CREDENTIALS": "Neteisingas prisijungimo vardas arba slaptažodis"
+  }
+}

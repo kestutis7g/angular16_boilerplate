@@ -1,0 +1,26 @@
+router-outlet {
+  min-height: 100vh;
+}
+
+#main-content {
+  display: block;
+  background-color: var(--primary-background);
+  height: 100vh;
+}
+
+.main-container {
+	margin-left: 15.625rem;
+}
+
+aside {
+	display: block;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	max-width: 15.625rem !important;
+	overflow-y: auto;
+	padding-top: 0;
+	box-shadow: none;
+	min-height: 100vh;
+}
