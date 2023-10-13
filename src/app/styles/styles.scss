@@ -1,1 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.btn-primary {
+  background-color: var(--primary-btn-color) !important;
+  color: var(--primary-font-color) !important;
+  border: 0;
+}

@@ -1,12 +1,14 @@
 <div app-theme class="min-vh-100">
-	<aside class="navbar navbar-expand-xs navbar-light bg-light fixed-start overflow-hidden border-end">
-		<sidebar></sidebar>
-	</aside>
-	<main class="main-container">
-		<div id="main-content" class="overflow-auto test">
-			<div class="p-4">
-				<router-outlet app-theme></router-outlet>
-			</div>
-		</div>
-	</main>
+  <aside
+    class="navbar navbar-expand-xs navbar-light fixed-start overflow-hidden border-end"
+  >
+    <sidebar></sidebar>
+  </aside>
+  <main class="main-container">
+    <div id="main-content" class="overflow-auto test">
+      <div class="p-4">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </main>
 </div>

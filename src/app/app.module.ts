@@ -15,7 +15,6 @@ import { AppInitializer } from './core/app.initializer';
 import { ServiceLocator } from './core/service-locator';
 import { SidebarComponent } from './core/components/sidebar/sidebar.component';
 import { SidebarRouteComponent } from './core/components/sidebar/sidebar-route/sidebar-route.component';
-import { SidebarGroupComponent } from './core/components/sidebar/sidebar-group/sidebar-group.component';
 import { SuccessNotificationInterceptor } from './core/interceptors/success-notification.interceptor';
 import { MainLayoutComponent } from './layouts/main/main-layout.component';
 import { UnauthorizedLayoutComponent } from './layouts/unauthorized/unauthorized-layout.component';
@@ -35,7 +34,6 @@ function initApp(initializer: AppInitializer) {
     UnauthorizedLayoutComponent,
     SidebarComponent,
     SidebarRouteComponent,
-    SidebarGroupComponent,
   ],
   imports: [
     BrowserModule,

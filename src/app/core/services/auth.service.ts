@@ -15,7 +15,7 @@ export class AuthService {
 
   private readonly TokenStorage: string = 'auth-token';
   private readonly LoginPage: string = '/login';
-  private readonly DefaultPage: string = '/payment/list';
+  private readonly DefaultPage: string = '/general/home';
   private readonly TokenValidInMinutes: number = 60;
 
   public signIn(request: LoginRequest): boolean {

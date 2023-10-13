@@ -7,33 +7,45 @@ import { MainLayoutComponent } from './layouts/main/main-layout.component';
 import { UnauthorizedLayoutComponent } from './layouts/unauthorized/unauthorized-layout.component';
 
 const routes: Routes = [
-	{
-		path: '',
-		component: MainLayoutComponent,
-		canActivate: [OnlyAuthorizedGuard],
-		children: [
-			{
-				path: 'payment',
-				loadChildren: () => import('./features/payment/payment.module').then((x) => x.PaymentModule),
-				canLoad: [OnlyAuthorizedGuard],
-			},
-		],
-	},
-	{
-		path: '',
-		component: UnauthorizedLayoutComponent,
-		canActivate: [OnlyUnauthorizedGuard],
-		loadChildren: () => import('./features/auth/auth.module').then((x) => x.AuthModule),
-		canLoad: [OnlyUnauthorizedGuard],
-	},
-	{
-		path: '**',
-		redirectTo: '/payment/list',
-	},
+  {
+    path: '',
+    component: MainLayoutComponent,
+    canActivate: [OnlyAuthorizedGuard],
+    children: [
+      {
+        path: 'payment',
+        loadChildren: () =>
+          import('./features/payment/payment.module').then(
+            (x) => x.PaymentModule
+          ),
+        canLoad: [OnlyAuthorizedGuard],
+      },
+      {
+        path: 'general',
+        loadChildren: () =>
+          import('./features/general/general.module').then(
+            (x) => x.GeneralModule
+          ),
+        canLoad: [OnlyAuthorizedGuard],
+      },
+    ],
+  },
+  {
+    path: '',
+    component: UnauthorizedLayoutComponent,
+    canActivate: [OnlyUnauthorizedGuard],
+    loadChildren: () =>
+      import('./features/auth/auth.module').then((x) => x.AuthModule),
+    canLoad: [OnlyUnauthorizedGuard],
+  },
+  {
+    path: '**',
+    redirectTo: '/general/home',
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -1,3 +1,9 @@
-.sidenav-header {
-	height: 61px;
+.navbar-nav {
+  background-color: var(--secondary-background);
+}
+
+.nav-item {
+  justify-content: center;
+  display: flex;
+  vertical-align: middle;
 }

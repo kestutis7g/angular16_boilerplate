@@ -1,45 +1,22 @@
 import { RouteInfo } from '../types/route.types';
 
 export const Routes: RouteInfo[] = [
-	{
-		path: '/payment',
-		title: 'menu.payments',
-		type: 'sub',
-		icon: 'fa-solid fa-credit-card fa-lg',
-		children: [
-			{
-				path: '/list',
-				title: 'menu.list',
-				type: 'link',
-			},
-			{
-				path: '/audit',
-				title: 'menu.audit',
-				type: 'link',
-			},
-			{
-				path: '/import',
-				title: 'menu.import',
-				type: 'link',
-			},
-		],
-	},
-	{
-		path: '/parking',
-		title: 'menu.parking',
-		type: 'sub',
-		icon: 'fa-solid fa-square-parking fa-xl',
-		children: [
-			{
-				path: '/list',
-				title: 'menu.list',
-				type: 'link',
-			},
-			{
-				path: '/audit',
-				title: 'menu.audit',
-				type: 'link',
-			},
-		],
-	},
+  {
+    path: '/general/home',
+    title: 'menu.home',
+    type: 'link',
+    icon: 'fa-solid fa-home fa-xl',
+  },
+  {
+    path: '/general/settings',
+    title: 'menu.settings',
+    type: 'link',
+    icon: 'fa-solid fa-gear fa-xl',
+  },
+  {
+    path: '/payment/list',
+    title: 'menu.cashRegister',
+    type: 'link',
+    icon: 'fa-solid fa-cash-register fa-xl',
+  },
 ];

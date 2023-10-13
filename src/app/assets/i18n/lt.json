@@ -19,7 +19,8 @@
     "skipped": "Praleistas",
     "upload": "Įkelti",
     "uploading": "Įkeliama",
-    "processing": "Apdorojama"
+    "processing": "Apdorojama",
+    "systemName": "Pardavimų valdymo sistema"
   },
 
   "setting": {
@@ -51,7 +52,8 @@
   "menu": {
     "home": "Pradinis",
     "list": "Sąrašas",
-    "settings": "Nustatymai"
+    "settings": "Nustatymai",
+    "cashRegister": "Kasa"
   },
 
   "alert": {

@@ -19,7 +19,8 @@
     "skipped": "Skipped",
     "upload": "Upload",
     "uploading": "Uploading",
-    "processing": "Processing"
+    "processing": "Processing",
+    "systemName": "Sales management system"
   },
 
   "setting": {
@@ -51,7 +52,8 @@
   "menu": {
     "home": "Home",
     "list": "List",
-    "settings": "Settings"
+    "settings": "Settings",
+    "cashRegister": "Cash register"
   },
 
   "alert": {

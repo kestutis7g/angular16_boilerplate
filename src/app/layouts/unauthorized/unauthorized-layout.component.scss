@@ -3,8 +3,71 @@ router-outlet {
 }
 
 #main-content {
-	display: block;
-	background-color: var(--primary-background);
-	height: 100vh;
+  display: block;
+  background-color: var(--primary-background);
+  height: 100vh;
 }
 
+h1.title-smart {
+  font-size: 40px !important;
+  line-height: 35px;
+  color: var(--secondary-font-color);
+}
+h1.title-pos {
+  font-size: 70px !important;
+  line-height: 60px;
+  color: var(--secondary-font-color);
+}
+
+.system-name {
+  color: var(--secondary-font-color);
+}
+
+.login-form {
+  width: 323px;
+}
+
+.wave path {
+  fill: var(--secondary-font-color);
+}
+
+.wave {
+  filter: brightness(var(--svg-brightness));
+
+  //background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTc0LjQ3MDY0IDQ2LjM0NTk0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9IndhdmUtZ3JhZGllbnQiIHgxPSIwJSIgeTE9IjEwMCUiIHgyPSIwJSIgeTI9IjAlIj4KICAgICAgPHN0b3Agc3R5bGU9InN0b3AtY29sb3I6IzAwMDAzZjsiIG9mZnNldD0iMCIgaWQ9ImRlZXAtb2NlYW4iIC8+CiAgICAgIDxzdG9wIHN0eWxlPSJzdG9wLWNvbG9yOiM0ZTZmZmY7IiBvZmZzZXQ9IjEiIGlkPSJzaGFsbG93LW9jZWFuIiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHBhdGggc3R5bGU9ImZpbGw6dXJsKCN3YXZlLWdyYWRpZW50KTtmaWxsLXJ1bGU6ZXZlbm9kZCIgZD0ibSAwLDExLjM4NDQ4IGMgMCwwIDIxLjEzMzg1MSwxMS4zOTUzMSA0My42MTc2NjEsMTEuMzg0NDEgQyA2Ni4xMDE0NzEsMjIuNzU3OTkgMTA3Ljk2ODU2LDAuMDMyNjIgMTMwLjUwOCw3ZS01IGMgMjIuNTM5NDQsLTAuMDMyNSA0My45NjI2NCwxMS4zODQ0MSA0My45NjI2NCwxMS4zODQ0MSBWIDQ2LjM0NTk0IEggMCBaIiAvPgo8L3N2Zz4=");
+  background-image: url("../../assets/svg/wave.svg");
+  //   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg)
+  //     repeat-x;
+  background-repeat: repeat-x;
+  background-size: 100vh auto;
+  background-position: bottom;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 400px;
+  animation: wave 30s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  opacity: 0.9;
+  //   animation: swell 5s ease -1.25s infinite,
+  //     wave 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
+
+  z-index: 1;
+}
+
+@keyframes wave {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: -70vw;
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    background-position: right bottom -10px;
+  }
+  50% {
+    background-position: right bottom 0;
+  }
+}
